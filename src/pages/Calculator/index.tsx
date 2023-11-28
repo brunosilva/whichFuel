@@ -1,10 +1,12 @@
 import { StyleSheet, View } from 'react-native';
-import Calculator from './src/pages/Calculator';
+import RenderImage from '../../components/Logo';
+import FormCalculator from './parts/form';
 
-export default function App() {
+export default function Calculator() {
   return (
     <View style={styles.container}>
-      <Calculator />
+      <RenderImage image='logo' />
+      <FormCalculator />
     </View>
   );
 }
@@ -12,7 +14,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#292929',
     alignItems: 'center',
     justifyContent: 'center',
   },
