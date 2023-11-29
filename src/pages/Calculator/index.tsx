@@ -1,5 +1,5 @@
 import { StyleSheet, View } from 'react-native';
-import RenderImage from '../../components/Logo';
+import RenderImage from '../../components/RenderImage';
 import FormCalculator from './parts/form';
 
 export default function Calculator() {

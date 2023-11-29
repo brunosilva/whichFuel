@@ -9,7 +9,8 @@ export default function RenderImage({ image }: IProps) {
 
   return (
     <View style={styles.container}>
-      <Image source={require('./../../../assets/logo.png')} />
+      {image === 'logo' && <Image source={require('./../../../assets/logo.png')} />}
+      {image === 'result' && <Image source={require('./../../../assets/gas.png')} />}
     </View>
   );
 }
